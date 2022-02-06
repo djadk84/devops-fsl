@@ -3,7 +3,7 @@ pipeline {
     stages {
       stage('Checkout') {
         steps {
-          git branch: 'main', url: 'https://github.com/djadk84/devops-ci.git'
+          git branch: 'main', url: 'https://github.com/djadk84/devops-fsl.git'
           }
         }
       stage('Install') {
@@ -29,4 +29,4 @@ pipeline {
           }
         }
       }
-}
+  }
