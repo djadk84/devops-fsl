@@ -1,9 +1,9 @@
 pipeline {
-  agent { label 'awsnodejs' }
+  agent { label 'nodejs' }
     stages {
       stage('Checkout') {
         steps {
-          git branch: 'main', url: 'https://github.com/djadk84/devops-fsl.git'
+          git branch: 'main', url: 'https://github.com/djadk84/devops-ci.git'
           }
         }
       stage('Install') {
